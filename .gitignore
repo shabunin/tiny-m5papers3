@@ -1,0 +1,13 @@
+# Build output (fonts/*.bin are font data and stay)
+/*.bin
+*.elf
+*.hex
+*.uf2
+
+# Simulator screenshots and device screenshots (make shot)
+/sim-out/
+/*.png
+
+# Python
+__pycache__/
+*.pyc
