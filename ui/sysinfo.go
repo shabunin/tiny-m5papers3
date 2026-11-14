@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/fonts"
-	"tiny-m5papers3/gfx"
-	"tiny-m5papers3/papers3"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/fonts"
+	"github.com/shabunin/tiny-m5papers3/gfx"
+	"github.com/shabunin/tiny-m5papers3/papers3"
 )
 
 // SysInfo shows the board status and a few settings.

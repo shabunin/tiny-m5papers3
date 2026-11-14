@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	"tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/epd"
 
 	"tinygo.org/x/tinyfont"
 	"tinygo.org/x/tinyfont/freesans"

@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"tiny-m5papers3/gt911"
+	"github.com/shabunin/tiny-m5papers3/gt911"
 
 	"tinygo.org/x/drivers/bmi270"
 )

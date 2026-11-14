@@ -6,7 +6,7 @@ package main
 import (
 	"time"
 
-	"tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/epd"
 )
 
 func main() {

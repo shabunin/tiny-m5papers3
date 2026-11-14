@@ -4,9 +4,9 @@ import (
 	"math"
 	"strconv"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/fonts"
-	"tiny-m5papers3/gfx"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/fonts"
+	"github.com/shabunin/tiny-m5papers3/gfx"
 )
 
 // Clock is an analog clock face with the date, updated every minute.

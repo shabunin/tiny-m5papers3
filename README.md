@@ -118,16 +118,18 @@ come from the LCD hardware.
 
 ## Writing your own program
 
+In your own module, `go get github.com/shabunin/tiny-m5papers3@latest`, then:
+
 ```go
 package main
 
 import (
 	"time"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/fonts"
-	"tiny-m5papers3/gfx"
-	"tiny-m5papers3/papers3"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/fonts"
+	"github.com/shabunin/tiny-m5papers3/gfx"
+	"github.com/shabunin/tiny-m5papers3/papers3"
 )
 
 func main() {
@@ -245,10 +247,46 @@ tells whether a computer is connected (the launcher only dozes without one).
 Every sleep arms the RTC watchdog first: if the chip does not come back, it
 resets about 12% + 2 s after the planned wake time instead of hanging.
 
-## Licenses
+## License
 
-Waveform tables from LovyanGFX as shipped in
-[M5GFX](https://github.com/m5stack/M5GFX) (FreeBSD license,
-`epd/LICENSE-LovyanGFX`). Fonts: Roboto and Roboto Slab, Apache License 2.0
-(`fonts/LICENSE-fonts`). The BMI270 config blob comes with the TinyGo driver
-(Bosch license).
+MIT, see [LICENSE](LICENSE). Two parts come from other projects and keep
+their licenses: the waveform tables in `epd/` (FreeBSD license,
+[epd/LICENSE-LovyanGFX](epd/LICENSE-LovyanGFX)) and the fonts in `fonts/`
+(Apache License 2.0, [fonts/LICENSE-fonts](fonts/LICENSE-fonts)).
+
+## Credits
+
+This project is built on the work of:
+
+- [TinyGo](https://tinygo.org) (BSD 3-Clause): the compiler, the runtime and
+  the `machine` package with its `esp32s3-generic` target.
+- [espradio](https://github.com/tinygo-org/espradio) (BSD 3-Clause), which
+  runs Espressif's WiFi and Bluetooth libraries (Apache 2.0), with
+  [lneto](https://github.com/soypat/lneto) (BSD 3-Clause) as the network
+  stack, and [TinyGo bluetooth](https://github.com/tinygo-org/bluetooth)
+  (BSD 3-Clause): package `radio`.
+- [TinyGo drivers](https://github.com/tinygo-org/drivers) (BSD 3-Clause):
+  the BMI270 driver (with Bosch Sensortec's BMI270 config file, BSD 3-Clause)
+  and the `Displayer`, `touch` and `netlink` interfaces.
+  [tinyfont](https://github.com/tinygo-org/tinyfont) (BSD 3-Clause) draws the
+  text in the paint and epdtest examples.
+- [LovyanGFX](https://github.com/lovyan03/LovyanGFX) by lovyan03 and its
+  contributors (FreeBSD license), as shipped in M5Stack's M5GFX: the e-paper
+  waveforms, and the row timing and update sequence that `epd/` follows
+  (Bus_EPD, Panel_EPD).
+- [M5GFX](https://github.com/m5stack/M5GFX) and
+  [M5Unified](https://github.com/m5stack/M5Unified) by M5Stack (MIT): the
+  PaperS3 board data (pins, panel and touch wiring, battery divider) and the
+  power-off sequence.
+- [ESP-IDF](https://github.com/espressif/esp-idf) by Espressif (Apache 2.0):
+  register definitions and sequences for LCD_CAM and GDMA (`epd/`), the octal
+  PSRAM setup (`psram/`, from v5.3), light and deep sleep
+  (`papers3/sleep_esp32s3.go`), and the ROM function addresses.
+- [Roboto](https://github.com/googlefonts/roboto-2) and
+  [Roboto Slab](https://github.com/googlefonts/robotoslab) by Google
+  (Apache 2.0): the fonts, rasterized by `cmd/fontgen` with
+  [golang.org/x/image](https://pkg.go.dev/golang.org/x/image) (BSD 3-Clause).
+- [pyserial](https://github.com/pyserial/pyserial) and
+  [Pillow](https://python-pillow.org) in `tools/papers3.py`.
+- Espressif's ESP32-S3 Technical Reference Manual and the GT911, BM8563 and
+  BMI270 datasheets.

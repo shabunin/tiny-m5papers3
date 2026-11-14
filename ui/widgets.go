@@ -2,8 +2,9 @@ package ui
 
 import (
 	"strings"
-	"tiny-m5papers3/fonts"
-	"tiny-m5papers3/gfx"
+
+	"github.com/shabunin/tiny-m5papers3/fonts"
+	"github.com/shabunin/tiny-m5papers3/gfx"
 )
 
 // Button is a rounded push button.

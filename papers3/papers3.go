@@ -13,7 +13,7 @@ package papers3
 import (
 	"time"
 
-	"tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/epd"
 )
 
 // Display is the 960x540 e-paper panel. Configure sets it up.

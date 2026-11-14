@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"tiny-m5papers3/gt911"
+	"github.com/shabunin/tiny-m5papers3/gt911"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 package ui
 
-import "tiny-m5papers3/epd"
+import "github.com/shabunin/tiny-m5papers3/epd"
 
 // NewLauncher returns a system with the home screen and all built-in apps.
 func NewLauncher(d *epd.Display) *System {

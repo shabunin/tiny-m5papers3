@@ -11,8 +11,8 @@ import (
 	"machine"
 	"time"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/gt911"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/gt911"
 
 	"tinygo.org/x/tinyfont"
 	"tinygo.org/x/tinyfont/freesans"

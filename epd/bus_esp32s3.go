@@ -12,7 +12,7 @@ import (
 	"runtime/volatile"
 	"unsafe"
 
-	"tiny-m5papers3/psram"
+	"github.com/shabunin/tiny-m5papers3/psram"
 )
 
 // M5PaperS3 wiring (M5GFX board data, "papers3").

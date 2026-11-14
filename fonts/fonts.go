@@ -8,7 +8,7 @@ package fonts
 import (
 	_ "embed"
 
-	"tiny-m5papers3/gfx"
+	"github.com/shabunin/tiny-m5papers3/gfx"
 )
 
 //go:embed sans18.bin

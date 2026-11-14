@@ -1,5 +1,7 @@
 The waveform tables in epd/waveform.go are taken from LovyanGFX (Panel_EPD,
-as shipped in M5GFX: https://github.com/m5stack/M5GFX), under this license:
+as shipped in M5GFX: https://github.com/m5stack/M5GFX). The row timing in
+bus_esp32s3.go and the update sequence in display.go (eraser pass, ordered
+dithering) follow LovyanGFX's Bus_EPD and Panel_EPD. LovyanGFX's license:
 
 Software License Agreement (FreeBSD License)
 

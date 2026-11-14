@@ -9,7 +9,7 @@ import (
 	"time"
 	"unsafe"
 
-	"tiny-m5papers3/psram"
+	"github.com/shabunin/tiny-m5papers3/psram"
 )
 
 func hex(v uint32) string {

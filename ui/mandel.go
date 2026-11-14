@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/fonts"
-	"tiny-m5papers3/gfx"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/fonts"
+	"github.com/shabunin/tiny-m5papers3/gfx"
 )
 
 // Mandel explores the Mandelbrot set in 16 gray levels: tap to zoom in.

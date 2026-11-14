@@ -3,10 +3,10 @@ package ui
 import (
 	"strconv"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/fonts"
-	"tiny-m5papers3/gfx"
-	"tiny-m5papers3/papers3"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/fonts"
+	"github.com/shabunin/tiny-m5papers3/gfx"
+	"github.com/shabunin/tiny-m5papers3/papers3"
 )
 
 // TouchTest shows every finger the GT911 reports (up to 5) with its track

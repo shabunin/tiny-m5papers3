@@ -28,10 +28,10 @@ import (
 	"strings"
 	"time"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/papers3"
-	"tiny-m5papers3/radio"
-	"tiny-m5papers3/ui"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/papers3"
+	"github.com/shabunin/tiny-m5papers3/radio"
+	"github.com/shabunin/tiny-m5papers3/ui"
 )
 
 var (

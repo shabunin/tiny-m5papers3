@@ -1,4 +1,4 @@
-module tiny-m5papers3
+module github.com/shabunin/tiny-m5papers3
 
 go 1.26.10
 

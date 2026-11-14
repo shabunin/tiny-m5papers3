@@ -18,8 +18,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"tiny-m5papers3/papers3"
-	"tiny-m5papers3/ui"
+	"github.com/shabunin/tiny-m5papers3/papers3"
+	"github.com/shabunin/tiny-m5papers3/ui"
 )
 
 var (

@@ -3,9 +3,9 @@ package ui
 import (
 	"strconv"
 
-	"tiny-m5papers3/epd"
-	"tiny-m5papers3/fonts"
-	"tiny-m5papers3/gfx"
+	"github.com/shabunin/tiny-m5papers3/epd"
+	"github.com/shabunin/tiny-m5papers3/fonts"
+	"github.com/shabunin/tiny-m5papers3/gfx"
 )
 
 // Reader shows a text in pages: tap the right side for the next page, the
